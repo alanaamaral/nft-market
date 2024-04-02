@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   background-color: #060714;
@@ -6,23 +11,32 @@ body {
 }
 
 .nav {
-  padding: 0 39px 0 48px;
+  width: 100%;
   height: 117px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
+.logo {
+  margin: 0 0 0 48px;
+  width: 278px;
+}
+
 .nav-links {
-  margin-right: 64px;
   color: #7780A1;
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
 }
 
-.no-margin {
-  margin: 0 !important;
+.nav-links-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
 }
 
 .button-border {
@@ -33,11 +47,14 @@ body {
   color: #7780A1;
   font-size: 16px;
   font-weight: 600;
+  width: 142px;
+  height: 52px;
 }
 
 .nav-buttons {
   display: flex;
   gap: 16px;
+  margin: 0 32px 0 0;
 }
 
 .button-border a {
@@ -55,6 +72,8 @@ body {
   font-weight: 600;
   font-size: 16px;
   border: 2px #4745D0;
+  width: 144px;
+  height: 52px;
 }
 
 .banner {
@@ -115,7 +134,11 @@ body {
 .tag-paragrafo-1 {
   font-size: 20px;
   font-weight: 600;
-  margin: 24px 0
+  margin: 24px 0;
+  padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .tag-paragrafo-2 {
@@ -124,9 +147,10 @@ body {
   background-color: #514CFF15;
   border-radius: 4px;
   color: #514CFF;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   padding: 8px 14px;
+  width: 120px;
 }
 
 .roadmap-tag {
@@ -135,13 +159,14 @@ body {
   flex-direction: column;
   border: 2px solid #262840;
   border-radius: 20px;
-  width: 400px;
+  width: 380px;
   padding: 24px;
   margin: 0 12px;
 }
 
 .roadmap-tag-image {
   border-radius: 20px;
+  width: 100%;
 }
 
 .roadmap-tag-time {
@@ -174,7 +199,7 @@ body {
 }
 
 .like-description {
-  margin: 0 42px 0 16px;
+  margin: 0 16px 0 10px;
 }
 
 .like-holder {
@@ -209,16 +234,16 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto 0;
-  width: 1392px;
+  width: 100%;
   border-bottom: 1px solid #262840;
-  padding: 126px;
+  padding: 20px 20px 20px 80px;
 }
 
 .community-container {
   margin: 0px auto 183px;
   display: flex;
   align-items: center;
-  width: 920px;
+  width: 100%px;
   gap: 18.5px;
 }
 
@@ -240,7 +265,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 212px;
+  width: 100%;
 }
 
 .community-images {
@@ -254,8 +279,9 @@ body {
   border: 2px solid #262840;
   background-color: transparent;
   border-radius: 20px;
-  width: 1392px;
-  margin: 0 auto 120px;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 120px;
 }
 
 .contact>div {
@@ -271,8 +297,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  margin-top: 251px;
+  gap: 50px;
+  margin: 251px 0 0 40px;
 }
 
 .paragrafo-contact-1 {
@@ -320,7 +346,7 @@ body {
 }
 
 .contact-3 {
-  padding: 0 48px;
+  padding-left: 66px;
 }
 
 
@@ -339,7 +365,7 @@ body {
 }
 
 .campo-newsletter {
-  width: calc(367px - 106px);
+  width: 200px;
   border: 2px solid #FFFFFF;
   border-radius: 16px 0 0 16px;
   font-size: 16px;
@@ -358,18 +384,4 @@ body {
   font-size: 16px;
   font-weight: 600;
 
-}
-
-.carrossel-seta {
-  position: absolute;
-  z-index: 999;
-  right: 204px;
-  background-color: #26284080;
-  width: 120px;
-  height: 120px;
-  border: none;
-  border-radius: 50%;
-  font-size: 32px;
-  color: #FFFFFF;
-  cursor: pointer;
 }
